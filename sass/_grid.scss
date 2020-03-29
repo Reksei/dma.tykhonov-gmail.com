@@ -1,0 +1,14 @@
+
+.header-main {
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+     max-width: $content-width;
+     margin: auto;
+     margin-bottom: 10px;
+     background-color: $container-color;
+     border: none;
+     border-radius: 10px;
+}

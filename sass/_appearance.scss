@@ -1,0 +1,14 @@
+body {
+    @include regular;
+    background-color: $bgcolor;
+    color: white;
+    font-size: $fontsize;
+}
+    
+
+.header-main {
+    position: fixed;
+    width: 100%;
+    background-color: $container-color;
+}
+    

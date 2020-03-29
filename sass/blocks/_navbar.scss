@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    width: $content-width;
+    margin: auto;
+}
+
+.navbar__logo {
+    display: flex;
+    margin: auto 0;
+}
+
+.navbar__logo-link {
+    display: flex;
+    margin: auto;
+}
+
+.navbar__logo-img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 4px 16px;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 50%;
+}
+.navbar__logo-link img:hover {
+    border-color: white;
+}
+
+.navbar__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__list-item {
+    display: flex;
+}
+
+.navbar__link, .navbar__link-act {
+    margin: auto;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar__link {
+    color: white;
+}
+
+.navbar__link-act {
+    color: gold;
+}
+
+.navbar__link:hover, .navbar__link-act:hover {
+    background-color: $bgcolor;
+}
+

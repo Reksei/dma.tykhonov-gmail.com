@@ -1,5 +1,110 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+/* Global variables */
+/* Basic grid settings */
+.header-main {
+  width: 100%;
+  position: fixed;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #2A2A2A;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Fonts settings */
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("../font/Ubuntu-Regular.eot");
+  src: url("../font/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Ubuntu-Regular.woff") format("woff"), url("../font/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GUI settings */
+body {
+  font-family: 'Ubuntu Regular', sans-serif;
+  background-color: #1B1B1B;
+  color: white;
+  font-size: 14px;
+}
+
+.header-main {
+  position: fixed;
+  width: 100%;
+  background-color: #2A2A2A;
+}
+
+/* Navbar settings */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+.navbar__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.navbar__logo-img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 4px 16px;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.navbar__logo-link img:hover {
+  border-color: white;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__link, .navbar__link-act {
+  margin: auto;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar__link {
+  color: white;
+}
+
+.navbar__link-act {
+  color: gold;
+}
+
+.navbar__link:hover, .navbar__link-act:hover {
+  background-color: #1B1B1B;
 }
 /*# sourceMappingURL=style.css.map */
