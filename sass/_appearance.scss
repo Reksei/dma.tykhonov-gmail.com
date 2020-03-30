@@ -1,14 +1,51 @@
-body {
-    @include regular;
-    background-color: $bgcolor;
-    color: white;
-    font-size: $fontsize;
-}
-    
+* {
+    padding: 0;
+    margin: 0;
 
-.header-main {
-    position: fixed;
-    width: 100%;
-    background-color: $container-color;
+    body {
+        @include regular;
+        background-color: $bgcolor;
+        color: white;
+    }
+
+    .has-tooltip {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px dotted white;
+
+        .tooltip-text {
+            width: inherit;
+            background-color: rgba($color: $bgcolor, $alpha: 0.8);
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+            padding: 2px 0;
+            position: absolute;
+            top: 150%;
+            left: 0%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom-color: rgba($color: $bgcolor, $alpha: 0.8);
+        }
+    }
+
+    .has-tooltip:hover {
+        .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
-    

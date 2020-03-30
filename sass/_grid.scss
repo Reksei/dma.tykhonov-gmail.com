@@ -1,14 +1,17 @@
-
 .header-main {
     width: 100%;
-    position: fixed;
+    background-color: $container-color;
+    box-shadow: 0 0 3px black;
+}
+
+.container-frame {
+    max-width: $content-width;
+    margin: 10px auto;
+    background-color: $container-color;    
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
 }
 
 .container {
-     max-width: $content-width;
-     margin: auto;
-     margin-bottom: 10px;
-     background-color: $container-color;
-     border: none;
-     border-radius: 10px;
+    padding: 8px 24px;
 }
